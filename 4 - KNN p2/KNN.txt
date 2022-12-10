@@ -1,0 +1,15 @@
+KNN Algorithme
+
+peut deviner ce que va etre un nouvo point
+par rapport a tout les point voisin
+
+le nombre de voisins qu'on choisi doit etre impair
+comme ca on ne peut pas tomber sur un 50:50
+
+distance entre 2 point est calcule par la magnitude :
+distance euclidienne
+d = sqrt( (x2 - x1)**2 + (y2 - y1)**2 )
+si nos points ont 3 parametre pour leur coordonné alors
+d = sqrt( (x2 - x1)**2 + (y2 - y1)**2 + (z2 - z2)**2 )
+Theoreme de Pythagore
+
