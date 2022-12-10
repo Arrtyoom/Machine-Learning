@@ -4,4 +4,5 @@
 2 : save model and plotting it
 
 
-3 : knn algorithme 
+3 : manipulating data to be usable   
+4 : knn algorithme
