@@ -12,4 +12,3 @@ d = sqrt( (x2 - x1)**2 + (y2 - y1)**2 )
 si nos points ont 3 parametre pour leur coordonné alors
 d = sqrt( (x2 - x1)**2 + (y2 - y1)**2 + (z2 - z2)**2 )
 Theoreme de Pythagore
-

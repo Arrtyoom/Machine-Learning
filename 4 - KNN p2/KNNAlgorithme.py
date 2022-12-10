@@ -8,7 +8,6 @@ from sklearn import linear_model, preprocessing
 # MANIPULATION OF DATA TO MAKE IT USABLE
 
 data = pd.read_csv("car.data")
-print(data.head())
 
 # the value in our data set are not numerical and so they are unaccurate
 # we have to modify them to integer value by using preprocessing.LabelEncoder
@@ -29,4 +28,15 @@ Y = list(cls)
 
 x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(X, Y, test_size=0.1)
 
-print(x_train, y_test)
+model = KNeighborsClassifier(n_neighbors=9)
+model.fit(x_train, y_train)
+acc = model.score(x_test, y_test)
+print(acc)
+
+
+predicted = model.predict(x_test)
+names = ["unacc", "acc", "good", "vgood"]
+for x in range(len(x_test)):
+    print("Predicted:", names[predicted[x]], " Data:", x_test[x], " Actual:", names[y_test[x]])
+    n = model.kneighbors([x_test[x]], 9, True)
+    print("N:", n)
