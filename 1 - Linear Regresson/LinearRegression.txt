@@ -1,0 +1,6 @@
+la regression lineair :
+algorithme qui cherche a etablir une relation a partir
+d'une base de donné (x et y) et va determiner une droite : y = ax + b
+
+pour calculer a : a = (y2 - y1) / (x2 - x1)
+pour calculer valeur de y quand x = 0
